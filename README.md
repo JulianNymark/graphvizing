@@ -1,4 +1,4 @@
-# graph
+# click on the pictures!
 
 <a href="basic_graph">
   <img src="basic_graph/img/g1.png"></img>
