@@ -1,5 +1,3 @@
-# graph
-
 ![](img/g1.png)
 
 ## dependencies
