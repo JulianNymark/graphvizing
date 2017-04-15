@@ -58,11 +58,16 @@ def parse(makefile):
     """
     _single_dep_emitter(_dependency_emitter(_line_emitter(''.join(makefile).split('\n'))))
 
-def makefile2dot():
+def makefile2dot(styles):
+
     print('#!/usr/bin/python3.5\n')
     print('import graphviz as gv')
     print('from styles import *\n')
     print('g = gv.Digraph(format=\'png\')')
+
+    # styles
+    if styles:
+        print('g = apply_styles(g, ' + str(styles) + ')')
 
     # nodes
     print()
@@ -74,6 +79,7 @@ def makefile2dot():
     for e in edges:
         print('g.edge(\'' + e[1] + '\',\'' + e[0] + '\')')
 
+    print()
     print('g.graph_attr[\'label\']=\'Makefile\'')
     print('g.render(\'img/g\')')
     print()
@@ -86,4 +92,4 @@ if __name__ == "__main__":
         print('Usage:\n\t./makefile2graphviz.py <Makefile >out.py\n', file=sys.stderr)
     else:
         parse(stdin)
-        makefile2dot()
+        makefile2dot(styles)
