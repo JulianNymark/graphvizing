@@ -81,6 +81,7 @@ def makefile2dot(styles):
 
     print()
     print('g.graph_attr[\'label\']=\'Makefile\'')
+    print('g.graph_attr[\'pad\']=\'0.25\'')
     print('g.render(\'img/g\')')
     print()
 
