@@ -1,6 +1,6 @@
 # graph
 
-![Alt text](img/g1.png?raw=true "Title")
+![](img/g1.png)
 
 ## dependencies
 - www.graphviz.org

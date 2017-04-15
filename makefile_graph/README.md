@@ -1,7 +1,7 @@
 # graph
 
 ## this is just a funny example (see https://github.com/lindenb/makefile2graph)
-![Alt text](img/g.png?raw=true "Title")
+![](img/g.png)
 
 ## dependencies
 - www.graphviz.org
