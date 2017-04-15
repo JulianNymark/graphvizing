@@ -1,0 +1,4 @@
+__pycache__/
+**/img/*
+!**/img/*.png
+**/gen_*
