@@ -8,4 +8,4 @@ img/g.png: gen_graph.py
 	python3.5 $<
 
 clean:
-	$(RM) -r img __pycache__
+	$(RM) -r img __pycache__ gen_*
