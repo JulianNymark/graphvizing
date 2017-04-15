@@ -1,7 +1,6 @@
 #!/usr/bin/python3.5
 # stolen & modified from https://github.com/vak/makefile2dot
 
-import graphviz as gv
 import re
 import sys
 
