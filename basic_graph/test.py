@@ -23,7 +23,5 @@ g1.edge('C', 'STOP')
 g1.edge('D', 'STOP')
 g1.edge('E', 'STOP')
 
-g1.graph_attr['label']='A hella fancy grapherino'
-
 g1 = apply_styles(g1, styles)
 g1.render('img/g1')
