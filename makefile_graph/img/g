@@ -1,0 +1,11 @@
+digraph {
+	graph [label=Makefile]
+		all
+		"gen_graph.py"
+		"img/g.png"
+		clean
+			all -> "img/g.png"
+			"gen_graph.py" -> Makefile
+			"gen_graph.py" -> "makefiletographviz.py"
+			"img/g.png" -> "gen_graph.py"
+}
