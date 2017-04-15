@@ -1,5 +1,3 @@
-# graph
-
 ## this is just a funny example (see https://github.com/lindenb/makefile2graph)
 ![](img/g.png)
 
